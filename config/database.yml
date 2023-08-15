@@ -27,8 +27,8 @@ development:
   encoding: unicode
   database: blog_app
   pool: 5
-  username: microverse
-  password: projects
+  username: postgres
+  password: Toa500806903
   host: localhost
 
   # The specified database role being used to connect to postgres.
