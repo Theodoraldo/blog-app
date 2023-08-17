@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  validates :title, presence: true
   after_create :counter_posts_update
   has_many :likes
   has_many :comments
