@@ -3,8 +3,8 @@ class Post < ApplicationRecord
   has_many :comments
   belongs_to :user, foreign_key: 'author_id'
 
-  def update_posts_counter
-    author.increment!(:posts_counter)
+  def posts_counter_update(id)
+    User.increment_counter(:posts_counter, id)
   end
 
   def recent_comments(id)
