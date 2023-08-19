@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./logo.ico" alt="logo" width="250"  height="auto" />
+  <img src="./logo.ico" alt="logo" width="200"  height="auto" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -12,14 +12,12 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -109,10 +107,6 @@ $ cd blog-app
 - Run `rake db:seed RAILS_ENV=test` to seed the testing database
 - Run `rspec`
 
-### Deployment
-
-N/A
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -144,7 +138,7 @@ N/A
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Theodoraldo/blog-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
