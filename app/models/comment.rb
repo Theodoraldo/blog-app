@@ -1,5 +1,4 @@
 class Comment < ApplicationRecord
-  after_create :update_comments_counter
   belongs_to :user
   belongs_to :post
 
