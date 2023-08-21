@@ -23,7 +23,7 @@ RSpec.describe Comment, type: :model do
     subject { Comment.create(post_id: post.id, user_id: user.id) }
 
     it 'increments the comments counter on the associated post' do
-      expect { subject.send(:update_comments_counter) }.to change { post.reload.comments_counter }.by(2)
+      expect { subject.send(:update_comments_counter) }.to change { post.reload.comments_counter }.by(1)
     end
   end
 end
