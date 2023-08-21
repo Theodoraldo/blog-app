@@ -102,7 +102,7 @@ $ cd blog-app
 - Run `rails db:migrate`
 - With Ruby on Rails and PostgreSQL installed in your environment, you can run `rails server` or `rails s` to run the website.
 
-### Tests
+### Tests <a name="run-tests"></a>
 
 - Run `rake db:seed RAILS_ENV=test` to seed the testing database
 - Run `rspec`
@@ -124,8 +124,6 @@ $ cd blog-app
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Build the project schemas**
 - [ ] **Add more tables to postgresql**
