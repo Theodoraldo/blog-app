@@ -9,7 +9,7 @@ RSpec.describe 'Posts', type: :request do
       get user_posts_path(user_id: user.id)
       expect(response).to have_http_status(:success)
     end
-    
+
     it 'should render the index template' do
       get user_posts_path(user_id: user.id)
       expect(response).to render_template(:index)
@@ -26,7 +26,7 @@ RSpec.describe 'Posts', type: :request do
       get user_post_path(id: post.id, user_id: user.id)
       expect(response).to have_http_status(:success)
     end
-    it 'should check if the response body includes correct placeholder text' do
+    it 'check if the response body includes correct placeholder text' do
       get user_post_path(id: post.id, user_id: user.id)
       expect(response.body).to include('Here is a posts for a given user')
     end

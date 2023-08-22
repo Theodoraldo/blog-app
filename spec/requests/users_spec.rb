@@ -6,7 +6,7 @@ RSpec.describe 'Users', type: :request do
       get users_path
       expect(response).to have_http_status(:success)
     end
-    
+
     it 'should render the index template' do
       get users_path
       expect(response).to render_template(:index)
@@ -19,7 +19,7 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'GET /users#show' do
-  user = User.create(name: 'Theodoraldo', photo: 'photo_url', bio: 'bio_text', post_counter: 0, bio: 'Teacher from Peru.')
+    user = User.create(name: 'Theodoraldo', photo: 'photo_url', post_counter: 0, bio: 'Teacher from Peru.')
     it 'if response status code is correct' do
       get user_path(id: user.id)
       expect(response).to have_http_status(200)
