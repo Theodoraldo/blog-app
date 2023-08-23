@@ -15,13 +15,13 @@ User.delete_all
 # Users
 user1 = User.create!(
   name: "Theodoraldo Gishun",
-  photo: "https://unsplash.com/photos/F_-0BxGuVvo",
+  photo: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
   bio: "This is User 1's bio. A developer from Poland, specialize in rails.",
   post_counter: 0
 )
 user2 = User.create!(
   name: "Asimeng Osei",
-  photo: "https://unsplash.com/photos/F_-0BxGuVvo",
+  photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
   bio: "This is User 2's bio. A developer from Ghana, specialize in react.",
   post_counter: 0
 )
@@ -42,7 +42,7 @@ post2 = Post.create!(
   author_id: user2.id
 )
 
-# Comments
+# Comments by both created users
 Comment.create!(
   text: "This is a comment on Post 1.",
   user: user2,
@@ -51,13 +51,13 @@ Comment.create!(
 Comment.create!(
   text: "This is another comment on Post 1.",
   user: user1,
-  post: post1
+  post: post2
 )
 
-# Likes
+# Likes by both created users
 Like.create!(
   user: user1,
-  post: post2
+  post: post1
 )
 Like.create!(
   user: user2,
