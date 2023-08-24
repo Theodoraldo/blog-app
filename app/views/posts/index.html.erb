@@ -26,7 +26,7 @@
     
   <h1>All comments</h1>
   <div class="to_all_container">
-   <% post.comments.each do |comment| %>
+   <% post.recent_comments.each do |comment| %>
       <h4>Username: <%= comment.user.name %> - <span> <%= comment.text %> </span> </h4>
    <% end %>
   </div>
