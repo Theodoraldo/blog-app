@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  width: 50%;
+  margin: 80px auto;
+}
+
+.to_all_container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+  border: 2px solid rgb(45, 44, 44);
+  margin-bottom: 20px;
+}
+
+.user_photo {
+  width: 150px;
+  height: 100px;
+}
+
+.user_left {
+  float: right;
+}
+
+.bio,
+.posts {
+  border: 2px solid rgb(45, 44, 44);
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 5px;
+  border: 2px solid rgb(45, 44, 44);
+  box-shadow: 6px 6px 5px 1px black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn_container {
+  width: 100%;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

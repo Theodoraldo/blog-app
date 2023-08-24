@@ -1,1 +1,15 @@
+
 <h1>Here is a list of users</h1>
+
+<% @users.each do |user| %>
+    <div class="to_all_container">
+      <img class="user_photo" src="<%= user.photo %>" alt="user photo">
+      <div>
+        <h2>Name: <%= user.name %></h2>
+          <h4 class="user_left">Number of posts: <%= user.post_counter %></h4>
+        <h4>
+          <%= link_to "View profile", user_path(user) %>
+        </h4>
+      </div>
+    </div>
+<% end %>

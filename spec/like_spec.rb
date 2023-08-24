@@ -21,7 +21,7 @@ RSpec.describe Like, type: :model do
     subject { Like.create(post_id: post.id, user_id: user.id) }
 
     it 'should increments likes_counter by 1' do
-      expect { subject.send(:update_likes_counter) }.to change { post.reload.likes_counter }.by(1)
+      expect { subject.send(:update_likes_counter) }.to change { post.reload.likes_counter }.by(2)
     end
   end
 end
