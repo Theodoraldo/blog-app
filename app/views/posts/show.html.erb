@@ -1,1 +1,18 @@
 <h1>Here is a posts for a given user</h1>
+
+<div class="to_all_container">
+  <div>
+    <div class="d-flex">
+      <h5><%= @post.title %> by : <%= @user.name %></h5>
+      <h5>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></h5>
+    </div>
+    <p><%= @user.bio %></p>
+  </div>
+</div>
+  
+<h1>All comments</h1>
+<div class="to_all_container">
+<% @post.comments.each do |comment| %>
+    <h4>Username: <%= comment.user.name %> - <span> <%= comment.text %> </span> </h4>
+<% end %>
+</div>
