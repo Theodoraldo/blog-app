@@ -8,4 +8,10 @@ class User < ApplicationRecord
   def recent_posts
     Post.where(author_id: id).order(created_at: :desc).limit(3)
   end
+
+  private
+
+  def set_default_posts_counter
+    self.posts_counter ||= 0
+  end
 end

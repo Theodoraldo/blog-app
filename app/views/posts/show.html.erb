@@ -11,8 +11,24 @@
 </div>
   
 <h1>All comments</h1>
-<div class="to_all_container">
+<div>
 <% @post.comments.each do |comment| %>
     <h4>Username: <%= comment.user.name %> - <span> <%= comment.text %> </span> </h4>
 <% end %>
 </div>
+
+<%= form_with(model: [ @user, @post, @post.comments.new ], local: true) do |form| %>
+  <div>
+    <%= form.label :text, "Send your Comment : " %>
+    <%= form.text_area :text, class: "text_input", placeholder: "Write your comment here" %>
+  </div>
+  <%= form.submit "Publish Comment", class: "posts-btn" %>
+<% end %>
+
+<%= form_with url: user_post_likes_path(@post.author_id, @post) do |form| %>
+  <%= form.submit 'Like', class: 'posts-btn' %>
+<% end %>
+
+<% flash.each do |key, message| %>
+  <div class="<%= key %>"><%= message %></div>
+<% end %>
