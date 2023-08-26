@@ -25,12 +25,14 @@
  </div>
     
   <h1>All comments</h1>
-  <div class="to_all_container">
+  <div>
    <% post.recent_comments.each do |comment| %>
       <h4>Username: <%= comment.user.name %> - <span> <%= comment.text %> </span> </h4>
    <% end %>
   </div>
  <% end %>
+
+ <%= link_to 'Create a new post', new_user_post_path(@user), class: 'posts-btn' %>
 
 <div class="btn_container">
   <button class="btn" type="button">Pagination</button>

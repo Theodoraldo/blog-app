@@ -65,3 +65,26 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.posts-btn {
+  color: rgb(34, 32, 32);
+  border: 2px solid rgb(34, 32, 32);
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px 0 5px;
+}
+
+.post_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_field {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.text_input {
+  width: 92%;
+  padding: 5px;
+}
