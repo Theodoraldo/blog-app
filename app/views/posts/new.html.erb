@@ -1,0 +1,13 @@
+<h3>Make all your Posts Here</h3>
+
+<%= form_with model: [current_user, @post], local: true, html: { class: "post_form" } do |form| %>
+  <div class="input_field">
+    <%= form.label :title, "Title :" %>
+    <%= form.text_field :title, class: "text_input", placeholder: "Enter the title of the post" %>
+  </div>
+  <div class="input_field">
+    <%= form.label :text, "Text :" %>
+    <%= form.text_area :text, class: "text_input", placeholder: "Enter the content of the post" %>
+  </div>
+  <%= form.submit "Create Post", class: "posts-btn" %>
+<% end %>
